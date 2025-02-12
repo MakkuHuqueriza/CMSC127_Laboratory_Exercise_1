@@ -145,7 +145,7 @@ const App = () => {
           <label>Other <input type="text" name="regionOther" className="border rounded-md p-1" /></label>
         </div>
 
-        <h2 className="text-xl font-semibold mb-2">15.Do you mostly travel to domestic or international areas?</h2>
+        <h2 className="text-xl font-semibold mb-2">15. Do you mostly travel to domestic or international areas?</h2>
         <div className="mb-4">
             <label><input type="radio" name="travelAreas" value="Domestic"  /> Domestic</label>
             <label><input type="radio" name="travelAreas" value="International" class='ml-4' /> International</label>
