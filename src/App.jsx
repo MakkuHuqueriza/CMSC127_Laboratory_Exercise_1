@@ -163,7 +163,7 @@ const App = () => {
           <label><input type="checkbox" name="travelingPurposes" value="Frodors" /> Frodors</label >< br/>
           <label><input type="checkbox" name="travelingPurposes" value="Eyewitness" /> Eyewitness</label >< br/>
           <label><input type="checkbox" name="travelingPurposes" value="Let's Go" /> Let's Go</label >< br/>
-          <label>Other <input type="text" name="travelingPurposes" class="border rounded-xl p-1" /></label>
+          <label>Other <input type="text" name="travelingPurposes" class="border rounded-md p-1" /></label>
         </div>
 
         <h2 className="text-xl font-semibold mb-2">17. What is the longest trip you have been on?</h2>
