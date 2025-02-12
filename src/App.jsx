@@ -1,25 +1,3 @@
-
-// function App() {
-//     return (
-//       <>
-//       <h3> 1. Contact Information </h3>
-//       <form> 
-//         <label> Name: <input type='text' /> </label>
-//         <label>Title: <input type='text' /> </label><br />
-//         <label>Phone: <input type='number'/> </label>
-//         <label>Fax:<input type='number'/> </label><br />
-//         <label>Email: <input type='email' /> </label>
-//         <label>Address: <input type='text' /> </label><br />
-//       </form>
-//       <form>
-
-//       </form>
-//       </>
-//     )
-// }
-
-import React from 'react';
-
 const App = () => {
   return (
     <div className="max-w-3xl mx-auto p-8 bg-white rounded-2xl shadow-md">
@@ -156,7 +134,49 @@ const App = () => {
           <label><input type="checkbox" name="transportationMode" value="Motorcycle" /> Motorcycle</label >
         </div>
 
-      </form>
+        <h2 className="text-xl font-semibold mb-2">14. Who usually accompanies you on vacation?</h2>
+        <div class="mb-4">
+          <label><input type="checkbox" name="accompanyOnVacation" value="I travel alone" /> I travel alone</label>< br/>
+          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse" /> Spouse</label >< br/>
+          <label><input type="checkbox" name="accompanyOnVacation" value="Children" /> Children</label >< br/>
+          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse and children" /> Spouse and children</label >< br/>
+          <label><input type="checkbox" name="accompanyOnVacation" value="Friends" /> Friends</label >< br/>
+          <label><input type="checkbox" name="accompanyOnVacation" value="Family members" /> Family members</label >< br/>
+          <label>Other <input type="text" name="accompanyOnVacation" class="border rounded-xl p-1" /></label>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-2">15.Do you mostly travel to domestic or international areas?</h2>
+        <div className="mb-4">
+            <label><input type="radio" name="travelAreas" value="Domestic"  /> Domestic</label>
+            <label><input type="radio" name="travelAreas" value="International" class='ml-4' /> International</label>
+            <label><input type="radio" name="travelAreas" value="Both" class='ml-4' /> Both</label>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-2">16. Do you use a guidebook for traveling purposes? Which one do you use most often?</h2>
+        <div class="mb-4">
+          <label><input type="checkbox" name="travelingPurposes" value="Do not use a travel guide book" /> Do not use a travel guide book</label>< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Lonely Planet" /> Lonely Planet</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Bradt" /> Bradt</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Rough Guide" /> Rough Guide</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Frommers" /> Frommers</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Time Out" /> Time Out</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Frodors" /> Frodors</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Eyewitness" /> Eyewitness</label >< br/>
+          <label><input type="checkbox" name="travelingPurposes" value="Let's Go" /> Let's Go</label >< br/>
+          <label>Other <input type="text" name="travelingPurposes" class="border rounded-xl p-1" /></label>
+        </div>
+
+        <h2 className="text-xl font-semibold mb-2">17. What is the longest trip you have been on?</h2>
+        <div className="mb-4">
+            <label><input type="radio" name="longestTrip" value="Less than 2 weeks"  /> Less than 2 weeks</label>
+            <label><input type="radio" name="longestTrip" value="2 - 4 weeks" class='ml-4' /> 2 - 4 weeks</label>
+            <label><input type="radio" name="longestTrip" value="1 - 4 months" class='ml-4' /> 1 - 4 months</label>
+            <label><input type="radio" name="longestTrip" value="4 - 6 months" class='ml-4' /> 4 - 6 months</label>
+            <label><input type="radio" name="longestTrip" value="6 - 9 months" class='ml-4' /> 6 - 9 months</label>
+            <label><input type="radio" name="longestTrip" value="9 months to one year" class='ml-4' /> 9 months to one year</label>
+            <label><input type="radio" name="longestTrip" value="More than one year" class='ml-4' /> More than one year</label>
+        </div>
+        </form>
     </div>
   );  
 };
