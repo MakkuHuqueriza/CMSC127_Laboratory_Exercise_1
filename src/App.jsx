@@ -38,56 +38,64 @@ const App = () => {
 
         <h2 className="text-xl font-semibold mb-2">2. When do you plan to travel next?</h2>
         <div className="mb-4">
-          <label><input type="radio" name="travelNext" value="1-3 months" /> 1 – 3 months</label><br />
-          <label><input type="radio" name="travelNext" value="3-6 months" /> 3 – 6 months</label><br />
-          <label><input type="radio" name="travelNext" value="6-12 months" /> 6 – 12 months</label><br />
+          <label><input type="radio" name="travelNext" value="1-3 months" /> 1 - 3 months</label><br />
+          <label><input type="radio" name="travelNext"value="3-6 months" /> 3 - 6 months</label><br />
+          <label><input type="radio" name="travelNext"value="6-12 months" /> 6 - 12 months</label><br />
           <label><input type="radio" name="travelNext" value="more than a year" /> More than a year</label>
         </div>
 
         <h2 className="text-xl font-semibold mb-2">3. How far in advance do you normally book your trips?</h2>
         <div className="mb-4">
-          <label><input type="radio" name="bookingAdvance" value="1-3 months" /> 1 – 3 months</label><br />
-          <label><input type="radio" name="bookingAdvance" value="3-6 months" /> 3 – 6 months</label><br />
-          <label><input type="radio" name="bookingAdvance" value="6-12 months" /> 6 – 12 months</label><br />
-          <label><input type="radio" name="bookingAdvance" value="more than a year" /> More than a year</label>
+          <label><input type="radio" name="advanceBook" value="1-3 months" /> 1 - 3 months</label><br />
+          <label><input type="radio" name="advanceBook"value="3-6 months" /> 3 - 6 months</label><br />
+          <label><input type="radio" name="advanceBook" value="6-12 months" /> 6 - 12 months</label><br />
+          <label><input type="radio" name="advanceBook" value="more than a year" /> More than a year</label>
         </div>
-</form>
-      <h2 class="text-xl font-semibold mb-2">5. What region of the world is your most favorite place to travel?</h2>
-<div class="mb-4 grid grid-cols-2 gap-4">
-  <div>
-    <label><input type="checkbox" name="region" value="North America" /> North America</label><br />
-    <label><input type="checkbox" name="region" value="Central America" /> Central America</label><br />
-    <label><input type="checkbox" name="region" value="Europe" /> Europe</label><br />
-    <label><input type="checkbox" name="region" value="Asia" /> Asia</label><br />
-    <label><input type="checkbox" name="region" value="Orient" /> Orient</label>
-  </div>
-  <div>
-    <label><input type="checkbox" name="region" value="South America" /> South America</label><br />
-    <label><input type="checkbox" name="region" value="Africa" /> Africa</label><br />
-    <label><input type="checkbox" name="region" value="Middle East" /> Middle East</label><br />
-    <label><input type="checkbox" name="region" value="Pacific" /> Pacific</label><br />
-    <label>Other <input type="text" name="regionOther" class="border rounded-xl p-1" /></label>
-  </div>
-</div>
 
-<h2 class="text-xl font-semibold mb-2">6. What hotel accommodations do you usually look for when travelling?</h2>
-<div class="mb-4">
-  <label><input type="radio" name="hotel" value="Budget" /> Budget</label><br />
-  <label><input type="radio" name="hotel" value="2 Star" /> 2 Star</label><br />
-  <label><input type="radio" name="hotel" value="3 Star" /> 3 Star</label><br />
-  <label><input type="radio" name="hotel" value="4 Star" /> 4 Star</label><br />
-  <label><input type="radio" name="hotel" value="5 Star" /> 5 Star</label>
-</div>
+        <h2 className="text-xl font-semibold mb-2">4. What time of the year do you normally prefer to travel?</h2>
+        <div className="mb-4">
+          <label><input type="radio" name="travelTime" value="1-3 months" />Spring</label><br />
+          <label><input type="radio" name="travelTime" value="3-6 months" />Summer</label><br />
+          <label><input type="radio" name="travelTime" value="6-12 months" />Fall</label><br />
+          <label><input type="radio" name="travelTime" value="more than a year" />Winter</label>
+        </div>
+        
+        <h2 class="text-xl font-semibold mb-2">5. What region of the world is your most favorite place to travel?</h2>
+        <div class="mb-4 grid grid-cols-2 gap-4">
+        <div>
+          <label><input type="checkbox" name="faveRegion" value="North America" /> North America</label><br />
+          <label><input type="checkbox" name="faveRegion" value="Central America" /> Central America</label><br />
+          <label><input type="checkbox" name="faveRegion" value="Europe" /> Europe</label><br />
+          <label><input type="checkbox" name="faveRegion"value="Asia" /> Asia</label><br />
+          <label><input type="checkbox" name="faveRegion" value="Orient" /> Orient</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="faveRegion" value="South America" /> South America</label><br />
+          <label><input type="checkbox" name="faveRegion" value="Africa" /> Africa</label><br />
+          <label><input type="checkbox" name="faveRegion" value="Middle East" /> Middle East</label><br />
+          <label><input type="checkbox" name="faveRegion"value="Pacific" /> Pacific</label><br />
+          <label>Other <input type="text" name="regionOther" class="border rounded-xl p-1" /></label>
+        </div>
+      </div>
 
-<h2 class="text-xl font-semibold mb-2">7. What activity level is most desired when traveling?</h2>
-<div class="mb-4">
-  <label><input type="radio" name="activity" value="Active" /> Active – includes cycling, hiking, and mountain climbing</label><br />
-  <label><input type="radio" name="activity" value="Moderate" /> Moderate activity – includes walking, exploration</label><br />
-  <label><input type="radio" name="activity" value="Low" /> Low activity – includes light walking, lectures</label>
-</div>
+      <h2 class="text-xl font-semibold mb-2">6. What hotel accommodations do you usually look for when travelling?</h2>
+      <div class="mb-4">
+        <label><input type="radio" name="hotelLook"value="Budget" /> Budget</label><br />
+        <label><input type="radio" name="hotelLook"value="2 Star" /> 2 Star</label><br />
+        <label><input type="radio" name="hotelLook"value="3 Star" /> 3 Star</label><br />
+        <label><input type="radio" name="hotelLook"value="4 Star" /> 4 Star</label><br />
+        <label><input type="radio" name="hotelLook"value="5 Star" /> 5 Star</label>
+      </div>
 
+      <h2 class="text-xl font-semibold mb-2">7. What activity level is most desired when traveling?</h2>
+      <div class="mb-4">
+        <label><input type="radio" name="activityLevel"value="Active" /> Active - includes cycling, hiking, and mountain climbing</label><br />
+        <label><input type="radio" name="activityLevel"value="Moderate" /> Moderate activity - includes walking, exploration</label><br />
+        <label><input type="radio" name="activityLevel"value="Low" /> Low activity - includes light walking, lectures</label>
+      </div>
+      </form>
     </div>
-  );
+  );  
 };
 
 export default App
