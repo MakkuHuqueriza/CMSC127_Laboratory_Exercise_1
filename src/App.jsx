@@ -6,179 +6,149 @@ const App = () => {
       <form>
         <h2 className="text-xl font-semibold mb-2">1. Contact Information</h2>
         <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input type="text" placeholder="Name" className="p-2 border rounded-xl" />
-          <input type="text" placeholder="Title" className="p-2 border rounded-xl" />
-          <input type="text" placeholder="Phone" className="p-2 border rounded-xl" />
-          <input type="text" placeholder="Fax" className="p-2 border rounded-xl" />
-          <input type="email" placeholder="Email" className="p-2 border rounded-xl" />
-          <input type="text" placeholder="Address" className="p-2 border rounded-xl col-span-2" />
+          <input type="text" placeholder="Name" className="p-2 border rounded-md" />
+          <input type="text" placeholder="Title" className="p-2 border rounded-md" />
+          <input type="tel" placeholder="Phone" className="p-2 border rounded-md" />
+          <input type="text" placeholder="Fax" className="p-2 border rounded-md" />
+          <input type="email" placeholder="Email" className="p-2 border rounded-md" />
+          <input type="text" placeholder="Address" className="p-2 border rounded-md col-span-2" />
         </div>
 
         <h2 className="text-xl font-semibold mb-2">2. When do you plan to travel next?</h2>
         <div className="mb-4">
           <label><input type="radio" name="travelNext" value="1-3 months" /> 1 - 3 months</label><br />
-          <label><input type="radio" name="travelNext"value="3-6 months" /> 3 - 6 months</label><br />
-          <label><input type="radio" name="travelNext"value="6-12 months" /> 6 - 12 months</label><br />
+          <label><input type="radio" name="travelNext" value="3-6 months" /> 3 - 6 months</label><br />
+          <label><input type="radio" name="travelNext" value="6-12 months" /> 6 - 12 months</label><br />
           <label><input type="radio" name="travelNext" value="more than a year" /> More than a year</label>
         </div>
 
         <h2 className="text-xl font-semibold mb-2">3. How far in advance do you normally book your trips?</h2>
         <div className="mb-4">
           <label><input type="radio" name="advanceBook" value="1-3 months" /> 1 - 3 months</label><br />
-          <label><input type="radio" name="advanceBook"value="3-6 months" /> 3 - 6 months</label><br />
+          <label><input type="radio" name="advanceBook" value="3-6 months" /> 3 - 6 months</label><br />
           <label><input type="radio" name="advanceBook" value="6-12 months" /> 6 - 12 months</label><br />
           <label><input type="radio" name="advanceBook" value="more than a year" /> More than a year</label>
         </div>
 
         <h2 className="text-xl font-semibold mb-2">4. What time of the year do you normally prefer to travel?</h2>
         <div className="mb-4">
-          <label><input type="radio" name="travelTime" value="1-3 months" />Spring</label><br />
-          <label><input type="radio" name="travelTime" value="3-6 months" />Summer</label><br />
-          <label><input type="radio" name="travelTime" value="6-12 months" />Fall</label><br />
-          <label><input type="radio" name="travelTime" value="more than a year" />Winter</label>
+          <label><input type="radio" name="travelTime" value="Spring" /> Spring</label><br />
+          <label><input type="radio" name="travelTime" value="Summer" /> Summer</label><br />
+          <label><input type="radio" name="travelTime" value="Fall" /> Fall</label><br />
+          <label><input type="radio" name="travelTime" value="Winter" /> Winter</label>
         </div>
         
-        <h2 class="text-xl font-semibold mb-2">5. What region of the world is your most favorite place to travel?</h2>
-        <div class="mb-4 grid grid-cols-2 gap-4">
+        <h2 className="text-xl font-semibold mb-2">5. What region of the world is your most favorite place to travel?</h2>
+        <div className="mb-4 grid grid-cols-2 gap-4">
           <div>
             <label><input type="checkbox" name="faveRegion" value="North America" /> North America</label><br />
             <label><input type="checkbox" name="faveRegion" value="Central America" /> Central America</label><br />
             <label><input type="checkbox" name="faveRegion" value="Europe" /> Europe</label><br />
-            <label><input type="checkbox" name="faveRegion"value="Asia" /> Asia</label><br />
+            <label><input type="checkbox" name="faveRegion" value="Asia" /> Asia</label><br />
             <label><input type="checkbox" name="faveRegion" value="Orient" /> Orient</label>
           </div>
           <div>
             <label><input type="checkbox" name="faveRegion" value="South America" /> South America</label><br />
             <label><input type="checkbox" name="faveRegion" value="Africa" /> Africa</label><br />
             <label><input type="checkbox" name="faveRegion" value="Middle East" /> Middle East</label><br />
-            <label><input type="checkbox" name="faveRegion"value="Pacific" /> Pacific</label><br />
-            <label>Other <input type="text" name="regionOther" class="border rounded-xl p-1" /></label>
+            <label><input type="checkbox" name="faveRegion" value="Pacific" /> Pacific</label><br />
+            <label>Other <input type="text" name="regionOther" className="border rounded-md p-1" /></label>
           </div>
         </div>
 
-        <h2 class="text-xl font-semibold mb-2">6. What hotel accommodations do you usually look for when travelling?</h2>
-        <div class="mb-4">
-          <label><input type="radio" name="hotelLook"value="Budget" /> Budget</label><br />
-          <label><input type="radio" name="hotelLook"value="2 Star" /> 2 Star</label><br />
-          <label><input type="radio" name="hotelLook"value="3 Star" /> 3 Star</label><br />
-          <label><input type="radio" name="hotelLook"value="4 Star" /> 4 Star</label><br />
-          <label><input type="radio" name="hotelLook"value="5 Star" /> 5 Star</label>
+        <h2 className="text-xl font-semibold mb-2">6. What hotel accommodations do you usually look for when travelling?</h2>
+        <div className="mb-4">
+          <label><input type="radio" name="hotelLook" value="Budget" /> Budget</label><br />
+          <label><input type="radio" name="hotelLook" value="2 Star" /> 2 Star</label><br />
+          <label><input type="radio" name="hotelLook" value="3 Star" /> 3 Star</label><br />
+          <label><input type="radio" name="hotelLook" value="4 Star" /> 4 Star</label><br />
+          <label><input type="radio" name="hotelLook" value="5 Star" /> 5 Star</label>
         </div>
 
-        <h2 class="text-xl font-semibold mb-2">7. What activity level is most desired when traveling?</h2>
-        <div class="mb-4">
-          <label><input type="radio" name="activityLevel"value="Active" /> Active - includes cycling, hiking, and mountain climbing</label><br />
-          <label><input type="radio" name="activityLevel"value="Moderate" /> Moderate activity - includes walking, exploration</label><br />
-          <label><input type="radio" name="activityLevel"value="Low" /> Low activity - includes light walking, lectures</label>
+        <h2 className="text-xl font-semibold mb-2">7. What activity level is most desired when traveling?</h2>
+        <div className="mb-4">
+          <label><input type="radio" name="activityLevel" value="Active" /> Active - includes cycling, hiking, and mountain climbing</label><br />
+          <label><input type="radio" name="activityLevel" value="Moderate" /> Moderate activity - includes walking, exploration</label><br />
+          <label><input type="radio" name="activityLevel" value="Low" /> Low activity - includes light walking, lectures</label>
         </div>
 
-        <h2 class="text-xl font-semibold mb-2">8. What do you most look for as far as activities when traveling?</h2>
-          <div class="mb-4 grid grid-cols-2 gap-4">
-            <div>
-              <label><input type="checkbox" name="travelActivity" value="History" />History</label><br />
-              <label><input type="checkbox" name="travelActivity" value="Art" /> Art</label><br />
-              <label><input type="checkbox" name="travelActivity" value="Wildlife" /> Wildlife</label><br />
-              <label><input type="checkbox" name="travelActivity"value="Nature" /> Nature</label>
-            </div>
-            <div>
-              <label><input type="checkbox" name="travelActivity" value="Local culture" /> Local culture</label><br />
-              <label><input type="checkbox" name="travelActivity" value="Food" /> Food</label><br />
-              <label><input type="checkbox" name="travelActivity" value="Science" /> Science</label><br />
-              <label>Other <input type="text" name="activityOther" class="border rounded-xl p-1" /></label>
-            </div>
+        <h2 className="text-xl font-semibold mb-2">8. What do you most look for as far as activities when traveling?</h2>
+        <div className="mb-4 grid grid-cols-2 gap-4">
+          <div>
+            <label><input type="checkbox" name="travelActivity" value="History" /> History</label><br />
+            <label><input type="checkbox" name="travelActivity" value="Art" /> Art</label><br />
+            <label><input type="checkbox" name="travelActivity" value="Wildlife" /> Wildlife</label><br />
+            <label><input type="checkbox" name="travelActivity" value="Nature" /> Nature</label>
           </div>
+          <div>
+            <label><input type="checkbox" name="travelActivity" value="Local culture" /> Local culture</label><br />
+            <label><input type="checkbox" name="travelActivity" value="Food" /> Food</label><br />
+            <label><input type="checkbox" name="travelActivity" value="Science" /> Science</label><br />
+            <label>Other <input type="text" name="activityOther" className="border rounded-md p-1" /></label>
+          </div>
+        </div>
         
-        <h2 className="text-xl font-semibold mb-2">9.Do you use travel related sites when booking travel? These include sites for airline tickets, cruises, car rentals (examples: Expedia or Travelocity).</h2>
+        <h2 className="text-xl font-semibold mb-2">9. Do you use travel related sites when booking travel? These include sites for airline tickets, cruises, car rentals (examples: Expedia or Travelocity).</h2>
         <div className="mb-4">
-          <label><input type="radio" name="travelSite" value="Yes"  /> Yes</label>
-          <label><input type="radio" name="travelSite" value="No" class='ml-4'/> No</label >
+          <label><input type="radio" name="travelSite" value="Yes" /> Yes</label>
+          <label><input type="radio" name="travelSite" value="No" className="ml-4" /> No</label>
         </div>
 
-        <h2 className="text-xl font-semibold mb-2">10.Do you travel mostly for business or pleasure? </h2>
+        <h2 className="text-xl font-semibold mb-2">10. Do you travel mostly for business or pleasure?</h2>
         <div className="mb-4">
-          <label><input type="radio" name="travelFor" value="Business"  /> Business</label>
-          <label><input type="radio" name="travelFor" value="Pleasure" class='ml-4' /> Pleasure</label>
-          <label><input type="radio" name="travelFor" value="Both" class='ml-4' /> Both</label>
+          <label><input type="radio" name="travelFor" value="Business" /> Business</label>
+          <label><input type="radio" name="travelFor" value="Pleasure" className="ml-4" /> Pleasure</label>
+          <label><input type="radio" name="travelFor" value="Both" className="ml-4" /> Both</label>
         </div>
 
-        <h2 class="text-xl font-semibold mb-2">11. What are your usual reasons to travel?</h2>
-          <div class="mb-4 grid grid-cols-2 gap-4">
-            <div>
-              <label><input type="checkbox" name="travelReasons" value="Company Business" /> Company Business</label><br />
-              <label><input type="checkbox" name="travelReasons" value="Military" /> Military</label><br />
-              <label><input type="checkbox" name="travelReasons" value="Resort vacation" /> Resort vacation</label><br />
-              <label><input type="checkbox" name="travelReasons"value="Visit friends or relatives" /> Visit friends or relatives</label>
-            </div>
-            <div>
-              <label><input type="checkbox" name="travelReasons" value="Personal trip" /> Personal trip</label><br />
-              <label><input type="checkbox" name="travelReasons" value="Cruise" /> Cruise</label><br />
-              <label><input type="checkbox" name="travelReasons" value="Relocating" /> Relocating</label>
-            </div>
+        <h2 className="text-xl font-semibold mb-2">11. What are your usual reasons to travel?</h2>
+        <div className="mb-4 grid grid-cols-2 gap-4">
+          <div>
+            <label><input type="checkbox" name="travelReasons" value="Company Business" /> Company Business</label><br />
+            <label><input type="checkbox" name="travelReasons" value="Military" /> Military</label><br />
+            <label><input type="checkbox" name="travelReasons" value="Resort vacation" /> Resort vacation</label><br />
+            <label><input type="checkbox" name="travelReasons" value="Visit friends or relatives" /> Visit friends or relatives</label>
           </div>
+          <div>
+            <label><input type="checkbox" name="travelReasons" value="Personal trip" /> Personal trip</label><br />
+            <label><input type="checkbox" name="travelReasons" value="Cruise" /> Cruise</label><br />
+            <label><input type="checkbox" name="travelReasons" value="Relocating" /> Relocating</label>
+          </div>
+        </div>
 
-        <h2 className="text-xl font-semibold mb-2">12.When it comes to airports, which do you dread dealing with the most? </h2>
-        <div class="mb-4">
-          <label><input type="radio" name="dreadDealing" value="Ticket counter" /> Ticket counter</label>< br/>
-          <label><input type="radio" name="dreadDealing" value="Curbside baggage check in" /> Curbside baggage check in</label >< br/>
-          <label><input type="radio" name="dreadDealing" value="Security checkpoint" /> Security checkpoint</label >< br/>
-          <label><input type="radio" name="dreadDealing" value="Boarding gate" /> Boarding gate</label >< br/>
-          <label><input type="radio" name="dreadDealing" value="Airline boarding" /> Airline boarding</label >< br/>
+        <h2 className="text-xl font-semibold mb-2">12. When it comes to airports, which do you dread dealing with the most?</h2>
+        <div className="mb-4">
+          <label><input type="radio" name="dreadDealing" value="Ticket counter" /> Ticket counter</label><br />
+          <label><input type="radio" name="dreadDealing" value="Curbside baggage check in" /> Curbside baggage check in</label><br />
+          <label><input type="radio" name="dreadDealing" value="Security checkpoint" /> Security checkpoint</label><br />
+          <label><input type="radio" name="dreadDealing" value="Boarding gate" /> Boarding gate</label><br />
+          <label><input type="radio" name="dreadDealing" value="Airline boarding" /> Airline boarding</label><br />
         </div>
 
         <h2 className="text-xl font-semibold mb-2">13. What mode of transportation do you use for traveling purposes?</h2>
-        <div class="mb-4">
-          <label><input type="checkbox" name="transportationMode" value="Airline" /> Airline</label>< br/>
-          <label><input type="checkbox" name="transportationMode" value="Train" /> Train</label >< br/>
-          <label><input type="checkbox" name="transportationMode" value="Car" /> Car</label >< br/>
-          <label><input type="checkbox" name="transportationMode" value="Boat" /> Boat</label >< br/>
-          <label><input type="checkbox" name="transportationMode" value="Motorcycle" /> Motorcycle</label >
+        <div className="mb-4">
+          <label><input type="checkbox" name="transportationMode" value="Airline" /> Airline</label><br />
+          <label><input type="checkbox" name="transportationMode" value="Train" /> Train</label><br />
+          <label><input type="checkbox" name="transportationMode" value="Car" /> Car</label><br />
+          <label><input type="checkbox" name="transportationMode" value="Boat" /> Boat</label><br />
+          <label><input type="checkbox" name="transportationMode" value="Motorcycle" /> Motorcycle</label>
         </div>
 
         <h2 className="text-xl font-semibold mb-2">14. Who usually accompanies you on vacation?</h2>
-        <div class="mb-4">
-          <label><input type="checkbox" name="accompanyOnVacation" value="I travel alone" /> I travel alone</label>< br/>
-          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse" /> Spouse</label >< br/>
-          <label><input type="checkbox" name="accompanyOnVacation" value="Children" /> Children</label >< br/>
-          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse and children" /> Spouse and children</label >< br/>
-          <label><input type="checkbox" name="accompanyOnVacation" value="Friends" /> Friends</label >< br/>
-          <label><input type="checkbox" name="accompanyOnVacation" value="Family members" /> Family members</label >< br/>
-          <label>Other <input type="text" name="accompanyOnVacation" class="border rounded-xl p-1" /></label>
-        </div>
-
-        <h2 className="text-xl font-semibold mb-2">15.Do you mostly travel to domestic or international areas?</h2>
         <div className="mb-4">
-            <label><input type="radio" name="travelAreas" value="Domestic"  /> Domestic</label>
-            <label><input type="radio" name="travelAreas" value="International" class='ml-4' /> International</label>
-            <label><input type="radio" name="travelAreas" value="Both" class='ml-4' /> Both</label>
+          <label><input type="checkbox" name="accompanyOnVacation" value="I travel alone" /> I travel alone</label><br />
+          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse" /> Spouse</label><br />
+          <label><input type="checkbox" name="accompanyOnVacation" value="Children" /> Children</label><br />
+          <label><input type="checkbox" name="accompanyOnVacation" value="Spouse and children" /> Spouse and children</label><br />
+          <label><input type="checkbox" name="accompanyOnVacation" value="Friends" /> Friends</label><br />
+          <label><input type="checkbox" name="accompanyOnVacation" value="Family members" /> Family members</label><br />
+          <label>Other <input type="text" name="regionOther" className="border rounded-md p-1" /></label>
         </div>
 
-        <h2 className="text-xl font-semibold mb-2">16. Do you use a guidebook for traveling purposes? Which one do you use most often?</h2>
-        <div class="mb-4">
-          <label><input type="checkbox" name="travelingPurposes" value="Do not use a travel guide book" /> Do not use a travel guide book</label>< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Lonely Planet" /> Lonely Planet</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Bradt" /> Bradt</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Rough Guide" /> Rough Guide</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Frommers" /> Frommers</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Time Out" /> Time Out</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Frodors" /> Frodors</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Eyewitness" /> Eyewitness</label >< br/>
-          <label><input type="checkbox" name="travelingPurposes" value="Let's Go" /> Let's Go</label >< br/>
-          <label>Other <input type="text" name="travelingPurposes" class="border rounded-xl p-1" /></label>
-        </div>
-
-        <h2 className="text-xl font-semibold mb-2">17. What is the longest trip you have been on?</h2>
-        <div className="mb-4">
-            <label><input type="radio" name="longestTrip" value="Less than 2 weeks"  /> Less than 2 weeks</label>
-            <label><input type="radio" name="longestTrip" value="2 - 4 weeks" class='ml-4' /> 2 - 4 weeks</label>
-            <label><input type="radio" name="longestTrip" value="1 - 4 months" class='ml-4' /> 1 - 4 months</label>
-            <label><input type="radio" name="longestTrip" value="4 - 6 months" class='ml-4' /> 4 - 6 months</label>
-            <label><input type="radio" name="longestTrip" value="6 - 9 months" class='ml-4' /> 6 - 9 months</label>
-            <label><input type="radio" name="longestTrip" value="9 months to one year" class='ml-4' /> 9 months to one year</label>
-            <label><input type="radio" name="longestTrip" value="More than one year" class='ml-4' /> More than one year</label>
-        </div>
-        </form>
+        <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md">Submit</button> 
+      </form>
     </div>
   );  
 };
 
-export default App
+export default App;
