@@ -168,12 +168,12 @@ const App = () => {
 
         <h2 className="text-xl font-semibold mb-2">17. What is the longest trip you have been on?</h2>
         <div className="mb-4">
-            <label><input type="radio" name="longestTrip" value="Less than 2 weeks"  /> Less than 2 weeks</label>
-            <label><input type="radio" name="longestTrip" value="2 - 4 weeks" class='ml-4' /> 2 - 4 weeks</label>
-            <label><input type="radio" name="longestTrip" value="1 - 4 months" class='ml-4' /> 1 - 4 months</label>
-            <label><input type="radio" name="longestTrip" value="4 - 6 months" class='ml-4' /> 4 - 6 months</label>
-            <label><input type="radio" name="longestTrip" value="6 - 9 months" class='ml-4' /> 6 - 9 months</label>
-            <label><input type="radio" name="longestTrip" value="9 months to one year" class='ml-4' /> 9 months to one year</label>
+            <label><input type="radio" name="longestTrip" value="Less than 2 weeks"  /> Less than 2 weeks</label><br />
+            <label><input type="radio" name="longestTrip" value="2 - 4 weeks" class='ml-4' /> 2 - 4 weeks</label><br />
+            <label><input type="radio" name="longestTrip" value="1 - 4 months" class='ml-4' /> 1 - 4 months</label><br />
+            <label><input type="radio" name="longestTrip" value="4 - 6 months" class='ml-4' /> 4 - 6 months</label><br />
+            <label><input type="radio" name="longestTrip" value="6 - 9 months" class='ml-4' /> 6 - 9 months</label><br />
+            <label><input type="radio" name="longestTrip" value="9 months to one year" class='ml-4' /> 9 months to one year</label><br />
             <label><input type="radio" name="longestTrip" value="More than one year" class='ml-4' /> More than one year</label>
         </div>
 
